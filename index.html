@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+    <!-- INDEX -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div  class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/LOGOCUBE.png" alt="" width="100" height="100">
               </a>
@@ -20,42 +21,107 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#Index">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="games.html">Games</a>
+                <a class="nav-link active" href="#games">Games</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="aboutus.html">About us</a>
+                <a class="nav-link active" href="#About us">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact</a>
+                <a class="nav-link active" href="#Contact">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="location.html">Location</a>
+                <a class="nav-link active" href="#Location">Location</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
-<div class="container-index">
+<div id="Index" class="container-index">
         <video autoplay muted loop src="videos/Gamesreel.mp4"></video>
         <img src="images/Showreel.png" alt="ShowReel">
-        
+</div>
+<!-- GAMES -->
+<div id="games" class="games-tittle">
+    <h1>GAMES</h1>
+</div>
+<div class="container-games">
+    <div >
+        <img src="images/CubeSword.png" alt="CubeSword"> 
+        <h1>Cube Sword / Android & IOS</h1>   
+     </div>
+    <div >
+         <img src="images/SCRASH1.png" alt="SystemCrash92">
+         <h1>Systemcrash 92 / Windows, MAC</h1>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
+    <div >
+        <img src="images/SpaceJunk.png" alt="SpaceJunk">
+        <h1>SpaceJunk / Windows, MAC </h1>
+    </div>
+</div>
+<div class="rotate-section">
+    
+    <model-viewer src="Assets/NormalCube.glb"   auto-rotate autoplay alt="CUBE CHARACTER">
+        <h1 class="presentation">Lv 1 Cube</h1>
+    </model-viewer>
+    <model-viewer src="Assets/Isla 1.glb"   auto-rotate autoplay alt="ISLE CUBESWORD">
+        <h1 class="presentation">Mushroom Island</h1>
+    </model-viewer>
+    <model-viewer src="Assets/Lv1Sword.glb"   auto-rotate autoplay alt="SWORD LV1">
+        <h1 class="presentation">Lv 1 Sword
+        </h1>
+    </model-viewer>
 
 </div>
+<!-- About us -->
+<div id="About us" class="container-aboutus">
+    
+    <h1 >92CUBE GAMES TEAM</h1>
+    <p  >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laborum eaque, asperiores rerum commodi adipisci ullam, iste facilis officiis
+         esse quasi animi! Aspernatur nihil quis, pariatur accusantium ab repellat excepturi!
+        Asperiores voluptates, labore nostrum, aspernatur ut consequatur aperiam commodi veritatis vel architecto dignissimos vero ipsum accusantium.
+         Omnis minus corrupti fuga nihil, officiis, veniam quidem esse vel dolor quod, totam excepturi!
+        Doloremque optio ullam ut inventore reprehenderit sequi velit molestiae neque dolorem nam quibusdam ducimus animi, iure delectus consequuntur
+         laudantium quasi pariatur officia dicta! Quasi, distinctio. Magni, commodi possimus? Veniam, officiis?
+        Numquam ea quaerat reiciendis. Similique ut doloremque voluptatibus aspernatur. In porro dolores minus. Voluptate dignissimos aliquam dolore,
+         dolorum quam sint exercitationem a voluptatum porro eum molestiae architecto incidunt delectus aut.
+        Et impedit ducimus, repellendus repellat aliquam dolor exercitationem voluptatum necessitatibus esse eum maiores non quas corrupti earum quod
+         quidem nesciunt animi eligendi. Possimus voluptatem nam ratione harum nobis sed id.
+    </p>
+</div>
+<!-- Location -->
+<div id="Location" class="container-location">
+    <div>
+        <h1>LOCATION</h1>
+        <P>you can find us</P>
+        <iframe  class="location_Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14400.2603211348!2d-54.94879767824726!3d-34.965498724416534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575057212597f0d%3A0xb526290e6422e553!2sJuan%20Gorlero%2C%2020100%20Punta%20del%20Este%2C%20Departamento%20de%20Maldonado!5e0!3m2!1ses-419!2suy!4v1645935673215!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Uruguay, Punta del Este</p>
+    </div>  
+</div>
+<!-- Contact -->
+<div id="Contact" class="container-contact">
+    <form action="">
+        <div class="contact_Group">
+            <h1 class="contact_Text">Contact us</h1>
+            <label for="name">Name</label>
+            <input name="name_campo" type="name" placeholder="Name">
+        </div>
+        <div class="contact_Group">
+            <label for="Email">Email</label>
+            <input name="email_campo" type="Email" placeholder="Email">
+        </div>
+        <div class="contact_Group">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <input name="value_campo" type="submit" value="Send">
+        </div>
+    </form>
+</div>
 <footer><h1> © 92Cube Games studio all rights reserved </h1></footer>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
