@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=VT323&display=swap');
+
+/* Variables*/
+$paleta-color1:rgb(29, 29, 29);
+$paleta-color2:rgb(0, 0, 0);
+$paleta-gradient1:linear-gradient(180deg, rgba(20,14,32,1) 0%, rgba(111,71,177,1) 100%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    color: aliceblue;
+}
+body{
+    background-color: $paleta-color2;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{z-index: 99;}
+
+
+header{
+    background-color: $paleta-color1;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 99;
+    img{
+        height: 100%;
+        width: auto;
+        display:inline-block;
+      }
+}
+ul {
+    li {
+    display: inline-block;
+    font-size: 30px;
+    padding:20px;
+    transition: all 0.3 ease;}
+}
+
+
+
+.container-index{
+    width: 100vw;
+    background-color: $paleta-color2;
+    display: flex;
+    justify-content: center;
+    video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+    img{
+        position: absolute;
+        top: 35vh;
+    }
+    
+}
+footer{
+    width: 100vw;
+    height: 150px;
+    background-color: $paleta-color1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    h1{
+        font-size: 20px;
+    }
+}
+ul li:hover{
+    transform: scale(1.2,1.2);
+    
+
+}
+/* Games section style */
+
+.container-games{
+
+    display: grid;
+    background-color: $paleta-color2;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70vw;
+    grid-column-gap:5% ;
+    width: 100vw;
+    background-image: url("images/Systemcrash92Rework.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 1 ease;
+        img{
+            width:350px;
+            height: 500px;
+            border: 5px solid white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 8px $paleta-color2; 
+        }  
+        h1{
+
+            font-size: 200%;
+            padding-top:3%;
+            text-shadow: 2px 3px $paleta-color2;
+        }  
+    }  
+}
+.container-games div img:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+       
+}
+
+.games-tittle{
+    width: 100vw;
+    height: 30vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 100px;
+        padding-top: 10%;
+        text-shadow: 5px 3px $paleta-color2;
+    }
+}
+
+
+/* About us section style */
+.container-aboutus{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/menu4k.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+        h1{
+            font-size: 50px;
+            padding: 2%;
+            text-shadow: 5px 3px $paleta-color2;    
+            }
+        p{
+             font-size: 20px;
+             width: 65%;
+        }
+}
+
+
+/* Location section style */
+
+.container-location{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/menu4k.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    img{
+        width: 800px;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        iframe{
+            width: 1200px;
+            height: 500px;
+        }
+        h1{
+            font-size: 50px;
+            text-shadow: 5px 3px $paleta-color2;
+        }
+        p{
+            font-size: 30px;
+        }
+       
+    }
+    
+}
+
+/* Contact section style */
+.container-contact{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/SpaceJunknave.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+   
+    
+}
+ h1{
+    font-size: 60px;
+    text-shadow: 5px 3px $paleta-color2;
+}
+input{
+    width: 100%;
+    
+}
+input, textarea{
+    width: 100%;
+    
+    outline: 0;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: rgb(26, 2, 41);
+    font-size: 40px;   
+}
+label{
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    
+    
+}
+form{
+    height: 20%;
+    width: 50%;
+    
+}
+.contact_Group{
+    padding: 3%;
+    
+}
+/* 3D SECTION */
+.rotate-section{
+    width: 100vw;
+    height: 100vh; 
+    background:$paleta-gradient1 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+model-viewer{
+    width: 30%;
+    height: 100vh;
+    text-align: center;
+}
+.presentation{
+    padding-top: 30%;
+    text-shadow: 5px 3px $paleta-color2;
+}
+
+
+
+
+
+@media only screen and (max-width: 949px) {
+        ul li{
+            font-size: 35px;
+            padding: 5px;
+        }
+        header{
+            justify-content: center;
+               position: relative;
+        }
+        .container-index video{ 
+            filter:blur(7px);  
+        }
+        .container-index img{
+            max-width: 100%;
+            z-index: 1; 
+        } 
+        .navbar{
+            z-index: 2;
+        }
+    /* Games section responsive */
+        .container-games{
+            height: fit-content;
+            display: block;
+            padding-top: 50%;
+            padding-bottom: 10%;
+        }    
+        .container-games div h1{
+            padding: 3%;
+        }
+        .games-tittle h1{
+            padding-top: 25%;
+        }
+        .container-games div img{
+            width: 250px;
+            height: 350px;
+        }
+         /* Location section responsive */
+         .container-location img{
+            width: 300px;
+        }
+        .container-location div iframe{
+            width: 50vw;
+            height: 50vh;
+        }
+        .container-location{
+            flex-wrap: nowrap;
+            overflow: hidden;
+        }
+
+       
+
+
+}   
+@media only screen and (max-width: 1212px) {
+    .container-aboutus h1{
+        font-size: 30px;
+        padding: 2%;
+        
+        
+        }
+        .container-aboutus p{
+            font-size: 20px;
+            width: 65%;
+        }
+        header{
+           
+               position: relative;
+        }
+
+}
