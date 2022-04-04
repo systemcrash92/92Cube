@@ -154,16 +154,18 @@ ul li:hover{
     align-items: center;
     flex-direction: column;
     overflow: auto;
-        h1{
-            font-size: 50px;
-            padding: 2%;
-            text-shadow: 5px 3px $paleta-color2;    
-            }
-        p{
-             font-size: 20px;
-             width: 65%;
-        }
+   
 }
+.tittle{
+    font-size: 50px;
+    padding: 2%;
+    text-shadow: 5px 3px $paleta-color2;   
+        &__info {
+            font-size: 20px;
+            width: 65%;
+        }
+    }
+
 
 
 /* Location section style */
