@@ -1,0 +1,70 @@
+@media only screen and (max-width: 949px) {
+    ul li{
+        font-size: 35px;
+        padding: 5px;
+    }
+    header{
+        justify-content: center;
+           position: relative;
+    }
+    .container-index video{ 
+        filter:blur(7px);  
+    }
+    .container-index img{
+        max-width: 100%;
+        z-index: 1; 
+    } 
+    .navbar{
+        z-index: 2;
+    }
+/* Games section responsive */
+    .container-games{
+        height: fit-content;
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 10%;
+    }    
+    .container-games div h1{
+        padding: 3%;
+    }
+    .games-tittle h1{
+        padding-top: 25%;
+    }
+    .container-games div img{
+        width: 250px;
+        height: 350px;
+    }
+     /* Location section responsive */
+     .container-location img{
+        width: 300px;
+    }
+    .container-location div iframe{
+        width: 50vw;
+        height: 50vh;
+    }
+    .container-location{
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+   
+
+
+}   
+@media only screen and (max-width: 1212px) {
+.container-aboutus h1{
+    font-size: 30px;
+    padding: 2%;
+    
+    
+    }
+    .container-aboutus p{
+        font-size: 20px;
+        width: 65%;
+    }
+    header{
+       
+           position: relative;
+    }
+
+}

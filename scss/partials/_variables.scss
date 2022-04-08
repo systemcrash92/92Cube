@@ -1,0 +1,26 @@
+/* Mapas*/
+
+$mapcolor:(
+color1:rgb(29, 29, 29),
+color2:rgb(0, 0, 0),
+gradient1:linear-gradient(180deg, rgba(20,14,32,1) 0%, rgba(111,71,177,1) 100%),
+textshadow1: 5px 3px rgb(0, 0, 0)
+);
+
+/* Extend*/
+
+%bg-static {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Mixin*/
+@mixin flex($display,$xposition,$yposition){
+
+     display: $display;
+     justify-content: $xposition;
+     align-items: $yposition;
+}
+

@@ -1,0 +1,21 @@
+/* About us section style */
+.container-aboutus{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/menu4k.png");
+    @extend %bg-static;
+    @include flex(flex,center,center);
+    flex-direction: column;
+    overflow: auto;
+   
+}
+.tittle{
+    font-size: 50px;
+    padding: 2%;
+    text-shadow: map-get($map: mapcolor, $key:textshadow1 );
+        &__info {
+            font-size: 20px;
+            width: 65%;
+        }
+    }
+

@@ -1,0 +1,29 @@
+/* Location section style */
+
+.container-location{
+    height: 100vh;
+    width: 100vw;
+    @include flex(flex,center,center);
+    background-image: url("/images/menu4k.png");
+    @extend %bg-static;
+    img{
+        width: 800px;
+    }
+    div{
+        @include flex(flex,center,center);
+        flex-direction: column;
+        iframe{
+            width: 1200px;
+            height: 500px;
+        }
+        h1{
+            font-size: 50px;
+            text-shadow: map-get($map: mapcolor, $key:textshadow1);
+        }
+        p{
+            font-size: 30px;
+        }
+       
+    }
+    
+}

@@ -1,0 +1,45 @@
+/* Contact section style */
+.container-contact{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/SpaceJunknave.png');
+    @extend %bg-static;
+    @include flex(flex,center,center);
+    text-align: center;
+    overflow: auto;
+   
+    
+}
+ h1{
+    font-size: 60px;
+    text-shadow: map-get($map: mapcolor, $key:textshadow1 );
+}
+input{
+    width: 100%;
+    
+}
+input, textarea{
+    width: 100%;
+    
+    outline: 0;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: rgb(26, 2, 41);
+    font-size: 40px;   
+}
+label{
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    
+    
+}
+form{
+    height: 20%;
+    width: 50%;
+    
+}
+.contact_Group{
+    padding: 3%;
+    
+}
