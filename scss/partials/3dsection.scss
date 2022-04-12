@@ -2,7 +2,7 @@
 .rotate-section{
     width: 100vw;
     height: 100vh; 
-    background:map-get($map: mapcolor, $key:gradient1 ) ;
+    background: map-get($map: mapcolor, $key:gradient1);
     @include flex(flex,space-between,center);
 }
 model-viewer{

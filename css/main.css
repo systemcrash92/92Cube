@@ -1,4 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=VT323&display=swap");
+/* Loading */
+.loading{
+  position: absolute;
+  align-items: center;
+  width: 100vw;
+  height: 659vh;
+  background-color: black;
+  z-index: 3000;
+  animation: fadeoff 4s linear forwards;
+}
+.loading h1{
+  font-size: 25px;
+  position: fixed;
+  left: 48vw;
+  margin-top:50vh;
+
+}
+.loading img{
+  display: flex;
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  left: 48vw;
+  margin-top:40vh;
+  animation: rotateimg 4s linear forwards;
+}
+@keyframes rotateimg{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{ transform: rotate(720deg);}
+}
+@keyframes fadeoff{
+    90%
+      {
+        background-color:rgba(0,0,0,100%);
+        }  
+    99% {
+    visibility: visible;
+    }
+    100% {
+    visibility: hidden;
+    background-color:rgba(0,0,0,0%);
+}
+}
+
 /* Variables*/
 * {
   margin: 0;
