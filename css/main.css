@@ -473,4 +473,29 @@ model-viewer {
     position: relative;
   }
 }
+@media only screen and (max-width: 600px){
+  .loading img{
+      left: 45vw;
+      margin-top:36vh;
+  }
+  .games-tittle h1 {
+    padding-top:1%;
+  }
+  .presentation {
+    padding-top: 30%;
+    text-shadow: 5px 3px black;
+    font-size: 20px;
+  }
+  .container-aboutus p{
+    font-size: 13px;
+ }
+  .loading{
+   height: 718vh;
+  }
+  .container-contact form{
+    width: auto;
+  }
+  .container-games div h1 {
+    font-size: 20px;
+}
 /*# sourceMappingURL=main.css.map */
