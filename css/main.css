@@ -251,7 +251,7 @@ ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: auto;
+  
 }
 
 .tittle {
@@ -322,7 +322,7 @@ ul li:hover {
 /* Contact section style */
 .container-contact {
   width: 100vw;
-  height: 100vh;
+  
   background-image: url("/images/SpaceJunknave.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -338,7 +338,7 @@ ul li:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  overflow: auto;
+  
 }
 
 h1 {
@@ -472,6 +472,7 @@ model-viewer {
   header {
     position: relative;
   }
+ 
 }
 @media only screen and (max-width: 600px){
   .loading img{

@@ -6,7 +6,7 @@
     @extend %bg-static;
     @include flex(flex,center,center);
     flex-direction: column;
-    overflow: auto;
+    
    
 }
 .tittle{
